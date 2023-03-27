@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --blanco: white;
+    --colorfondo: rgb(80, 20, 100);
+}
+
+html {
+    background-image: url(imagenes/img2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    opacity: .9;
+}
+
+.encabezador {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(1, 11, 30);
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+
+}
+
+.feedback a {
+    font-size: 1rem;
+    padding: 10px;
+    color: #fff;
+}
+
+span {
+    background-image: linear-gradient(to right, rgb(236, 8, 229), rgb(190, 190, 212), rgb(7, 215, 7));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    padding: 4px;
+}
+
+i {
+    color: chartreuse;
+    font-size: 30px;
+    margin: 10px;
+}
+
+.logo {
+    width: 30%;
+    padding: 10px;
+}
+
+h1 {
+    color: var(--blanco);
+    text-align: center;
+    padding: 10px;
+}
+
+#aside {
+    width: 14rem;
+    height: 100%;
+    color: #000 !important;
+    background-color: #49125C;
+    position: absolute;
+    display: none;
+
+}
+
+.letras:hover {
+    background-image: linear-gradient(to right, rgb(236, 8, 229), rgb(190, 190, 212), rgb(7, 215, 7));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#aside div {
+    padding: 10px;
+}
+
+section {
+    float: left;
+    margin-left: 240px;
+    padding: 20px;
+}
+
+.heramientas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8rem;
+}
+
+button {
+    width: 9rem;
+    height: 5vh;
+    background: var(--colorfondo);
+    color: var(--blanco);
+    border-radius: 10px;
+}
+
+button:hover {
+    box-shadow: 2px 6px 20px var(--colorfondo);
+    border: none;
+}
+
+.imagen1 {
+    border-radius: 20px;
+    background: black;
+    opacity: .7;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+p {
+    color: var(--blanco);
+    font-size: 20px;
+    text-align: center;
+}
+
+span,
+address {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: var(--blanco);
+}
+
+footer {
+    background: var(--colorfondo);
+    width: 100%;
+    height: 60px;
+    bottom: 0px;
+    position: absolute;
+    padding: 10px;
+    margin-bottom: -160px;
+}
+
+.pro {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin-left: 100px;
+
+}
+
+figure .imagenes {
+    width: 100%;
+    height: 15vh;
+}
+
+figcaption {
+    color: white;
+    font-size: 100%;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    /* Ocultar el modal por defecto */
+    position: fixed;
+    /* Posición fija para mantenerlo en el centro de la pantalla */
+    z-index: 1;
+    /* Asegurarse de que el modal esté en la capa superior */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Permitir el desplazamiento si el contenido es más largo que la pantalla */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo oscuro semitransparente para resaltar el modal */
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* Centrar verticalmente el contenido del modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Ajustar el ancho del modal */
+}
+
+/* Estilos para el botón de cierre */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos para el modal */
+.modal {
+    display: none;
+    /* Ocultar el modal por defecto */
+    position: fixed;
+    /* Posición fija para mantenerlo en el centro de la pantalla */
+    z-index: 1;
+    /* Asegurarse de que el modal esté en la capa superior */
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    overflow: auto;
+    /* Permitir el desplazamiento si el contenido es más largo que la pantalla */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo oscuro semitransparente para resaltar el modal */
+}
+
+/* Estilos para el contenido del modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* Centrar verticalmente el contenido del modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    text-align: justify;
+    height: 20%;
+    /* Ajustar el ancho del modal */
+}
+
+/* Estilos para el botón de cierre */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#mostrar{
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    
+}
+i {
+    color: chartreuse;
+    font-size: 30px;
+    margin: 20px;
+    cursor: pointer;
+  }
